@@ -1,6 +1,6 @@
 export const ACTION_INCREMENT_COUNTER = {
   type: 'ACTION_INCREMENT_COUNTER',
-  count: 1
+  count: 1 + 10
 };
 
 export const ACTION_DECREMENT_COUNTER = {
@@ -15,10 +15,15 @@ export const ADD_EX = {
 
 export const DRAWER_OPEN = {
   type: 'DRAWER_OPEN',
-  open: true
+  open: () => alert('test')
 }
 
 export const DRAWER_CLOSE = {
   type: 'DRAWER_CLOSE',
   open: false
+}
+
+export const DRAWER_SHOW = {
+  type: 'DRAWER_SHOW',
+  check: true
 }
