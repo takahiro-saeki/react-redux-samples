@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import CounterComponent from '../component/Counter';
-import {ACTION_INCREMENT_COUNTER, ACTION_DECREMENT_COUNTER, ADD_EX, DRAWER_OPEN} from '../action/index';
+import {ACTION_INCREMENT_COUNTER, ACTION_DECREMENT_COUNTER, ADD_EX, DRAWER_OPEN,DRAWER_SHOW, DRAWER_REMOVE} from '../action/index';
 
 function mapStateToPropsContainer (state) {
   console.log(state)
@@ -18,7 +18,8 @@ function mapDispatchToPropsContainer (dispatch) {
     onClickMinus: () => dispatch(ACTION_DECREMENT_COUNTER),
     onClickHuge: () => dispatch(ADD_EX),
     onAlert: () => dispatch(DRAWER_OPEN),
-    onDrawer: () => dispatch(DRAWER_SHOW)
+    onDrawer: () => dispatch(DRAWER_SHOW),
+    onHide: () => dispatch(DRAWER_REMOVE)
   };
 }
 

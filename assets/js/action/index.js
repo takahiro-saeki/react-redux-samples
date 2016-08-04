@@ -13,6 +13,7 @@ export const ADD_EX = {
   count: 100
 }
 
+//不要かも
 export const DRAWER_OPEN = {
   type: 'DRAWER_OPEN',
   open: () => alert('test')
@@ -23,7 +24,13 @@ export const DRAWER_CLOSE = {
   open: false
 }
 
+//ここから必要
 export const DRAWER_SHOW = {
   type: 'DRAWER_SHOW',
   check: true
+}
+
+export const DRAWER_REMOVE = {
+  type: 'DRAWER_REMOVE',
+  check: false
 }

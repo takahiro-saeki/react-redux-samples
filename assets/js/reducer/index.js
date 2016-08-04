@@ -13,6 +13,8 @@ export default function count(state = {count: 0, open: null, check: false}, acti
       return Object.assign({}, {count: count}, {open: action.open})
     case 'DRAWER_SHOW':
       return Object.assign({}, {count: count}, {open: action.open}, {check: action.check})
+    case 'DRAWER_REMOVE':
+      return Object.assign({}, {count: count}, {open: action.open}, {check: action.check})
     default:
       return state;
   }
